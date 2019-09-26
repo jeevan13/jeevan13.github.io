@@ -8,3 +8,33 @@ div {
     box-sizing: border-box;
     margin: 3%
 }
+
+/*mobile formatting */
+
+[class*="col-"] {
+    font-size: 3em;
+    width: 94%;
+    background-color: lightcoral;
+    
+}
+/* formatting for tablets, notice 't' */
+@media only screen and (min-width: 600px) {
+    [class*="col-t-"]  {
+        /* do these things */
+        font-size: 1.5em;
+        width: 44%;
+        background-color: yellow;
+    }
+    .col-d-3 {
+        width: 94%;
+    }
+}
+/* this is the div formatting for a desktop */
+@media only screen and (min-width: 768px)
+{
+    [class*="col-d-"] {
+        font-size: 3em;
+        width: 27%;
+        background-color: lightgreen;
+    }
+}
